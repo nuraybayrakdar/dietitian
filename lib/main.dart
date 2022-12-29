@@ -1,4 +1,5 @@
 import 'package:circle_nav_bar/circle_nav_bar.dart';
+import 'package:dietitian/view/home/profile/view/profile_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -53,18 +54,38 @@ class _MyHomePageState extends State<MyHomePage>
       extendBody: true,
       bottomNavigationBar: CircleNavBar(
         activeIcons: const [
-          Icon(Icons.person, color: Colors.deepPurple),
-          Icon(Icons.home, color: Colors.deepPurple),
-          Icon(Icons.favorite, color: Colors.deepPurple),
-          Icon(Icons.favorite, color: Colors.deepPurple),
+          Icon(Icons.person, color: Colors.white),
+          Icon(Icons.home, color: Colors.white),
+          Icon(Icons.favorite, color: Colors.white),
+          Icon(Icons.favorite, color: Colors.white),
         ],
         inactiveIcons: const [
-          Text("My"),
-          Text("Home"),
-          Text("Like"),
-          Text("Like"),
+          Text(
+            "My",
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            "Home",
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            "Like",
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            "Like",
+            style: TextStyle(color: Colors.white),
+          ),
         ],
-        color: Colors.amber,
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment(0.8, 1),
+          colors: <Color>[
+            Color(0xff1f005c),
+            Color(0xff5b0060),
+            Color(0xffffb56b),
+          ],
+        ),
         height: 60,
         circleWidth: 60,
         activeIndex: tabIndex,
@@ -81,6 +102,7 @@ class _MyHomePageState extends State<MyHomePage>
         ),
         shadowColor: Colors.deepPurple,
         elevation: 10,
+        color: Colors.white.withOpacity(0.9),
       ),
       body: PageView(
         controller: pageController,
@@ -91,19 +113,16 @@ class _MyHomePageState extends State<MyHomePage>
           Container(
               width: double.infinity,
               height: double.infinity,
-              color: Colors.red),
+              color: Colors.white),
           Container(
               width: double.infinity,
               height: double.infinity,
-              color: Colors.green),
+              color: Colors.white),
           Container(
               width: double.infinity,
               height: double.infinity,
-              color: Colors.blue),
-          Container(
-              width: double.infinity,
-              height: double.infinity,
-              color: Colors.blue),
+              color: Colors.white),
+          const ProfileView(),
         ],
       ),
     );
