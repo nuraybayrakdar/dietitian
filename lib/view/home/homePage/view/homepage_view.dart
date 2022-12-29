@@ -81,7 +81,6 @@ class _HomePageState extends State<HomePage>
           begin: Alignment.topLeft,
           end: Alignment(0.8, 1),
           colors: <Color>[
-            ColorConst.primaryBlue,
             ColorConst.secondBlue,
             ColorConst.thirdBlue,
             ColorConst.darkBlue,
@@ -114,17 +113,17 @@ class _HomePageState extends State<HomePage>
           Container(
             width: double.infinity,
             height: double.infinity,
-            color: ColorConst.primaryBlue,
+            color: ColorConst.beigeSplash,
           ),
           Container(
             width: double.infinity,
             height: double.infinity,
-            color: ColorConst.primaryBlue,
+            color: ColorConst.beigeSplash,
           ),
           Container(
             width: double.infinity,
             height: double.infinity,
-            color: ColorConst.primaryBlue,
+            color: ColorConst.beigeSplash,
           ),
           const ProfileView(),
         ],

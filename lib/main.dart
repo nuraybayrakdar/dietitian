@@ -1,4 +1,5 @@
-import 'package:dietitian/view/home/homePage/view/homepage_view.dart';
+import 'package:dietitian/view/auth/splash/view/splash_view.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const SplashScreenView(),
     );
   }
 }
