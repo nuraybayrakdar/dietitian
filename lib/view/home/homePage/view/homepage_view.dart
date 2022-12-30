@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage>
             height: double.infinity,
             color: ColorConst.beigeSplash,
           ),
-          const ProfileView(),
+          ProfileView(),
         ],
       ),
     );

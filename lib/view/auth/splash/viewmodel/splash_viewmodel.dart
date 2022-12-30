@@ -1,7 +1,5 @@
 import 'dart:async';
-
 import 'package:dietitian/view/auth/login/view/login_view.dart';
-import 'package:dietitian/view/home/homePage/view/homepage_view.dart';
 import 'package:flutter/material.dart';
 
 import '../view/splash_view.dart';
