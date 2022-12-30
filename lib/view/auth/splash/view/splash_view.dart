@@ -28,10 +28,10 @@ class _SplashScreenViewState extends SplashScreenViewModel {
               ),
               Text(
                 'DIETITIAN',
-                style: GoogleFonts.quicksand(
+                style: GoogleFonts.bebasNeue(
                   color: Colors.black.withOpacity(0.8),
                   fontSize: 25,
-                  letterSpacing: 10,
+                  letterSpacing: 15,
                   fontWeight: FontWeight.w500,
                 ),
               ),

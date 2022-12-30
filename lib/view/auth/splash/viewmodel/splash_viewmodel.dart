@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:dietitian/view/auth/login/view/login_view.dart';
 import 'package:dietitian/view/home/homePage/view/homepage_view.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,6 @@ abstract class SplashScreenViewModel extends State<SplashScreenView> {
     Timer(
         const Duration(seconds: 5),
         () => Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => const HomePage())));
+            MaterialPageRoute(builder: (context) => const LoginView())));
   }
 }

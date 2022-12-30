@@ -80,7 +80,7 @@ class ProfileView extends StatelessWidget {
   Widget _userAvatar() {
     return const CircleAvatar(
       radius: 35,
-      backgroundImage: AssetImage('assets/images/profile.jpg'),
+      backgroundImage: AssetImage('assets/images/profile.png'),
     );
   }
 
@@ -94,7 +94,7 @@ class ProfileView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Melike',
+                'Serdem',
                 style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 28,
